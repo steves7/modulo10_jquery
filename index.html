@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugin jquery</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h2>Preencha o formúlario</h2>
+    <div class="container">
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"/>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" >
+            <label for="cep">CEP:</label>
+            <input id="cep" type="text"/>
+            <label for="endereço">Endereço</label>
+            <input type="text" id="endereço" name="endereço">
+        </form>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#cpf').mask('000.000.000-00')
+    $('#cep').mask('00.000-000');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(175, 119, 228);
+
+}
+
+h2 {
+    margin-top: 60px;
+    display: block;
+    text-align: center;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+
+}
+
+label{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+input {
+    margin-bottom: 8px;
+    display:block;
+    width: 300px;
+    height: 28px;
+    
+}
+
+
+
+
